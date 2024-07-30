@@ -8,7 +8,7 @@ const App = () => {
     const [selectedColumn4, setSelectedColumn4] = useState('');
 
     useEffect(() => {
-        axios.get('http://localhost:8000/data')
+        axios.get('https://tags-rpli.onrender.com')
             .then(response => {
                 setData(response.data);
             })
